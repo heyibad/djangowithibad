@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title  %}{% endblock  %} | PerK</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+
+    <nav class='flex justify-between px-6 py-6 item-center border-b border-gray-200 '>
+        <a href="/" class="font-semibold text-lg ">PerK</a>
+        <div class="space-x-6">
+          <a href="/" class=" text-lg font-semibold hover:text-gray-500">
+          New-item
+        </a>
+        <a href="/" class=" text-lg font-semibold hover:text-gray-500">
+         Browse
+        </a>
+        <a href="/" class=" text-lg font-semibold bg-teal-500 text-white px-6 py-3 rounded-xl hover:bg-teal-700">
+         Sign up
+        </a>
+        <a href="/" class=" text-lg font-semibold bg-gray-500 text-white px-6 py-3 rounded-xl hover:bg-gray-700">
+    login    </a>
+      </div>
+          </nav>
+ 
+    <div class='main'>
+        {% block content %}
+        
+        {% endblock  %}
+    </div>
+
+
+
+
+
+
+    <footer class="flex justify-between px-6 py-6  bg-gray-800 ">
+        <div class="w2/3 pr-10">
+          <h1 class="mb-5 font-semibold text-gray-400">About</h1>
+          <p class="text-lg text-gray-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tenetur mollitia rem veritatis, voluptates debitis amet recusandae consequuntur ipsam distinctio ab sed, quam nemo delectus nostrum repellendus corporis numquam facilis natus sequi?</p>
+        </div>
+        <div class='w1/3 '>
+          <h3 class='mb-5 font-semibold text-gray-400'>Menu</h3>
+        <ul class="space-y-2">
+
+<li class=''> <a href="/" class=" text-lg font-semibold hover:text-teal-700  text-teal-500">
+ About
+</a> </li>
+<li class=''> <a href=" {% url 'contact' %} " class=" text-lg font-semibold hover:text-teal-700  text-teal-500">
+  Contact
+</a> </li>
+<li class=''> <a href="/" class=" text-lg font-semibold hover:text-teal-700  text-teal-500">
+  Privacy
+</a> </li>
+<li class=''> <a href="/" class=" text-lg font-semibold hover:text-teal-700  text-teal-500">
+ Terms to use
+</a> </li>
+        </ul>
+        
+        
+        </div>
+      </footer>
+
+
+
+
+
+
+
+</body>
+</html>
